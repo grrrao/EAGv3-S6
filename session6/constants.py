@@ -1,0 +1,8 @@
+ARTIFACT_THRESHOLD_BYTES = 4096
+MAX_ITERATIONS = 15
+MEMORY_TOP_K = 8
+SYNTHESIS_KEYWORDS = {
+    "synthesise", "synthesize", "extract", "list", "compare", "decide",
+}
+PERCEPTION_TEMPERATURE = 1.0
+DECISION_TEMPERATURE = 0.7

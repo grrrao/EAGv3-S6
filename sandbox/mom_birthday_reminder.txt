@@ -1,0 +1,10 @@
+CALENDAR REMINDER
+=================
+
+Reminder Date: 1 May 2026
+Event: Mom's Birthday (Advance Reminder)
+Notes: 2 weeks before - Start planning birthday celebration
+
+Reminder Date: 15 May 2026
+Event: Mom's Birthday
+Notes: Today is Mom's birthday! Don't forget to wish her and celebrate!

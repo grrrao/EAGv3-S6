@@ -1,0 +1,442 @@
+[
+  {
+    "id": "9a614323a98d",
+    "kind": "preference",
+    "keywords": [
+      "mom",
+      "birthday",
+      "may",
+      "2026",
+      "reminder",
+      "twoweeks",
+      "calendar"
+    ],
+    "descriptor": "mom's birthday reminder request",
+    "value": {
+      "event": "mom's birthday",
+      "date": "2026-05-15",
+      "reminders": [
+        "2026-05-01",
+        "2026-05-15"
+      ]
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "e4c11873",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:42:11.438915Z"
+  },
+  {
+    "id": "9f51cb0b27bb",
+    "kind": "fact",
+    "keywords": [
+      "mom",
+      "birthday"
+    ],
+    "descriptor": "question about mom's birthday",
+    "value": {},
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "6aa43104",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:42:17.172063Z"
+  },
+  {
+    "id": "80eb743bd353",
+    "kind": "scratchpad",
+    "keywords": [
+      "fetch",
+      "wikipedia",
+      "claudeshannon",
+      "birthdate",
+      "deathdate",
+      "keycontributions",
+      "informationtheory"
+    ],
+    "descriptor": "User request to retrieve Claude Shannon birth/death dates and contributions",
+    "value": {},
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "33ba6617",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:43:07.762807Z"
+  },
+  {
+    "id": "b6bdc6e4ee19",
+    "kind": "tool_outcome",
+    "keywords": [
+      "httpsenwikipediaorgwikiclaudeshannon",
+      "fetchurl"
+    ],
+    "descriptor": "fetch_url \u2192 [artifact art:cf4b51cbf108878a, 260071 bytes] preview: {   \"status\": 200,   \"con",
+    "value": {
+      "tool": "fetch_url",
+      "arguments": {
+        "url": "https://en.wikipedia.org/wiki/Claude_Shannon"
+      },
+      "result": "[artifact art:cf4b51cbf108878a, 260071 bytes] preview: {   \"status\": 200,   \"content_type\": \"text/markdown\",   \"length_bytes\": 254220,   \"text\": \"[Jump to content](https://en.wikipedia.org/wiki/Claude_Shannon#bodyContent)\\nMain menu\\nMain menu\\nmove to si"
+    },
+    "artifact_id": "art:cf4b51cbf108878a",
+    "source": "tool:fetch_url",
+    "run_id": "33ba6617",
+    "goal_id": "g33ba6617_0",
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:43:19.200768Z"
+  },
+  {
+    "id": "194f30cd5ea0",
+    "kind": "scratchpad",
+    "keywords": [
+      "find",
+      "familyfriendly",
+      "things",
+      "tokyo",
+      "weekend",
+      "saturday",
+      "weather",
+      "forecast",
+      "appropriate"
+    ],
+    "descriptor": "User request for family-friendly activities in Tokyo with weather check for Saturday",
+    "value": {
+      "activity_type": "family-friendly",
+      "location": "Tokyo",
+      "timeframe": "weekend",
+      "specific_day": "Saturday",
+      "need_weather_check": true
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "54d4439b",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:43:33.871070Z"
+  },
+  {
+    "id": "57fec5c86e26",
+    "kind": "tool_outcome",
+    "keywords": [
+      "weekend",
+      "familyfriendly",
+      "tokyo",
+      "websearch",
+      "activities",
+      "5"
+    ],
+    "descriptor": "web_search \u2192 [artifact art:2cf7365fde09078a, 9195 bytes] preview: {   \"title\": \"The best Toky",
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "max_results": 5,
+        "query": "family-friendly activities Tokyo weekend"
+      },
+      "result": "[artifact art:2cf7365fde09078a, 9195 bytes] preview: {   \"title\": \"The best Tokyo Family-friendly activities 2026 - Free cancellation\",   \"url\": \"https://www.getyourguide.com/tokyo-l193/family-friendly-activities-tc1094\",   \"snippet\": \"From \u00a3240 \u00a3228per"
+    },
+    "artifact_id": "art:2cf7365fde09078a",
+    "source": "tool:web_search",
+    "run_id": "54d4439b",
+    "goal_id": "g54d4439b_0",
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:44:42.927869Z"
+  },
+  {
+    "id": "c30471d1a162",
+    "kind": "tool_outcome",
+    "keywords": [
+      "tokyo",
+      "forecast",
+      "websearch",
+      "saturday",
+      "weather",
+      "5"
+    ],
+    "descriptor": "web_search \u2192 [artifact art:a986ca9b87c00a87, 10552 bytes] preview: {   \"title\": \"Japan Meteor",
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "query": "Tokyo weather forecast Saturday",
+        "max_results": 5
+      },
+      "result": "[artifact art:a986ca9b87c00a87, 10552 bytes] preview: {   \"title\": \"Japan Meteorological Agency | Weather forecast\",   \"url\": \"https://www.data.jma.go.jp/multi/yoho/yoho_detail.html?code=130010&lang=en\",   \"snippet\": \"## 3-days weather\\n\\nIssued on 2026/"
+    },
+    "artifact_id": "art:a986ca9b87c00a87",
+    "source": "tool:web_search",
+    "run_id": "54d4439b",
+    "goal_id": "g54d4439b_1",
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:44:55.178303Z"
+  },
+  {
+    "id": "550ad2b1c677",
+    "kind": "preference",
+    "keywords": [
+      "mom",
+      "birthday",
+      "may",
+      "2026",
+      "reminder",
+      "twoweeks",
+      "day"
+    ],
+    "descriptor": "mom birthday reminder dates",
+    "value": {
+      "mom_birthday": "2026-05-15",
+      "reminders": [
+        "2026-05-01",
+        "2026-05-15"
+      ]
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "8b621ebb",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:45:05.625121Z"
+  },
+  {
+    "id": "234602c793e1",
+    "kind": "fact",
+    "keywords": [
+      "mom",
+      "birthday"
+    ],
+    "descriptor": "query about mom's birthday date",
+    "value": {},
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "5d945f9f",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:47:42.916673Z"
+  },
+  {
+    "id": "3fcfdd3a1bfd",
+    "kind": "scratchpad",
+    "keywords": [
+      "search",
+      "python",
+      "asyncio",
+      "bestpractices",
+      "top",
+      "results",
+      "short",
+      "numberedlist",
+      "advice",
+      "agree"
+    ],
+    "descriptor": "task",
+    "value": {
+      "task": "summarize top 3 search results for \"Python asyncio best practices\" and list common advice"
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "8895dd97",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:47:49.667649Z"
+  },
+  {
+    "id": "dac23506a6df",
+    "kind": "tool_outcome",
+    "keywords": [
+      "websearch",
+      "asyncio",
+      "python",
+      "practices",
+      "best",
+      "5"
+    ],
+    "descriptor": "web_search \u2192 [artifact art:0793a1616d4c9117, 9259 bytes] preview: {   \"title\": \"Asyncio best ",
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "query": "Python asyncio best practices",
+        "max_results": 5
+      },
+      "result": "[artifact art:0793a1616d4c9117, 9259 bytes] preview: {   \"title\": \"Asyncio best practices - Async-SIG - Discussions on Python.org\",   \"url\": \"https://discuss.python.org/t/asyncio-best-practices/12576\",   \"snippet\": \"# Asyncio best practices\\n\\nSo I thou"
+    },
+    "artifact_id": "art:0793a1616d4c9117",
+    "source": "tool:web_search",
+    "run_id": "8895dd97",
+    "goal_id": "g8895dd97_0",
+    "confidence": 1.0,
+    "created_at": "2026-05-23T04:47:58.779584Z"
+  },
+  {
+    "id": "fe3cee429dc8",
+    "kind": "scratchpad",
+    "keywords": [
+      "fetch",
+      "claudeshannon",
+      "birthdate",
+      "deathdate",
+      "keycontributions",
+      "informationtheory",
+      "wikipedia"
+    ],
+    "descriptor": "request to fetch Claude Shannon Wikipedia page for specific data",
+    "value": {
+      "url": "https://en.wikipedia.org/wiki/Claude_Shannon",
+      "fields": [
+        "birth date",
+        "death date",
+        "key contributions"
+      ]
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "ac432c3c",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T05:05:55.758895Z"
+  },
+  {
+    "id": "263e8e3417df",
+    "kind": "preference",
+    "keywords": [
+      "tokyo",
+      "familyfriendly",
+      "weekend",
+      "weatherforecast",
+      "saturday"
+    ],
+    "descriptor": "User requests family-friendly Tokyo activities for the weekend and a weather check for Saturday to determine suitability.",
+    "value": {
+      "location": "Tokyo",
+      "constraints": "family-friendly",
+      "timeframe": "this weekend",
+      "weather_check_day": "Saturday",
+      "goal": "recommend activity based on weather"
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "1c0837e5",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T05:26:59.186012Z"
+  },
+  {
+    "id": "770d2c834506",
+    "kind": "scratchpad",
+    "keywords": [
+      "fetch",
+      "claudeshannon",
+      "birthdate",
+      "deathdate",
+      "keycontributions",
+      "informationtheory",
+      "wikipedia"
+    ],
+    "descriptor": "fetch_wikipedia",
+    "value": {
+      "url": "https://en.wikipedia.org/wiki/Claude_Shannon",
+      "fields": [
+        "birth_date",
+        "death_date",
+        "key_contributions"
+      ]
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "10d4a979",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T06:32:17.196676Z"
+  },
+  {
+    "id": "385a6ff3296a",
+    "kind": "tool_outcome",
+    "keywords": [
+      "fetchurl",
+      "httpsenwikipediaorgwikiclaudeshannon"
+    ],
+    "descriptor": "fetch_url \u2192 [artifact art:853a95460bd8c340, 262274 bytes] preview: {   \"status\": 200,   \"con",
+    "value": {
+      "tool": "fetch_url",
+      "arguments": {
+        "url": "https://en.wikipedia.org/wiki/Claude_Shannon"
+      },
+      "result": "[artifact art:853a95460bd8c340, 262274 bytes] preview: {   \"status\": 200,   \"content_type\": \"text/markdown\",   \"length_bytes\": 256179,   \"text\": \"[Jump to content](https://en.wikipedia.org/wiki/Claude_Shannon#bodyContent)\\nMain menu\\nMain menu\\nmove to si"
+    },
+    "artifact_id": "art:853a95460bd8c340",
+    "source": "tool:fetch_url",
+    "run_id": "10d4a979",
+    "goal_id": "g10d4a979_0",
+    "confidence": 1.0,
+    "created_at": "2026-05-23T06:32:31.395705Z"
+  },
+  {
+    "id": "8aae3015e53d",
+    "kind": "scratchpad",
+    "keywords": [
+      "familyfriendly",
+      "tokyo",
+      "weekend",
+      "saturday",
+      "weather",
+      "forecast",
+      "appropriate"
+    ],
+    "descriptor": "User request for family-friendly activities in Tokyo with weather check",
+    "value": {
+      "request_type": "family_friendly_activities",
+      "location": "Tokyo",
+      "timeframe": "weekend",
+      "specific_day": "Saturday",
+      "include_weather_check": true
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "9aaae673",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T06:32:41.856509Z"
+  },
+  {
+    "id": "1346d9da029a",
+    "kind": "fact",
+    "keywords": [
+      "birthday",
+      "may15",
+      "mom",
+      "2026"
+    ],
+    "descriptor": "User's mom's birthday",
+    "value": {},
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "7a9e1775",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T06:36:56.224388Z"
+  },
+  {
+    "id": "2bfcff0d67d7",
+    "kind": "scratchpad",
+    "keywords": [
+      "python",
+      "asyncio",
+      "best",
+      "practices",
+      "search",
+      "read",
+      "results",
+      "list",
+      "advice"
+    ],
+    "descriptor": "Search and summarize asyncio best practices",
+    "value": {
+      "query": "Python asyncio best practices",
+      "constraints": "top 3 results, numbered list of agreed advice"
+    },
+    "artifact_id": null,
+    "source": "user_query",
+    "run_id": "28fd6589",
+    "goal_id": null,
+    "confidence": 1.0,
+    "created_at": "2026-05-23T06:41:55.548616Z"
+  }
+]
